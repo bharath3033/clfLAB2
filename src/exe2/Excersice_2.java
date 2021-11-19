@@ -1,0 +1,21 @@
+package exe2;
+
+import java.util.Scanner;
+
+public class Excersice_2 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the size of array : ");
+		int size = sc.nextInt();
+		String[] arr = new String[size];
+
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print("Enter " + i + " index element : ");
+			arr[i] = sc.next();
+		}
+		Sorting t = new Sorting();
+		t.sortStrings(arr);
+		System.out.println("Sorted Strings are : " + t.sortStrings(arr));
+	}
+
+}
